@@ -1,0 +1,5 @@
+<footer>
+    <p>&copy; {{ now.Format "2006" }} - {{ .Site.Params.author }}</p>
+</footer>
+
+{{ if .Params.math }}{{ partial "math.html" }}{{ end }}
