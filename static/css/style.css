@@ -27,6 +27,12 @@ nav a {
     background: #404040;
     padding: 0.5em;
     border-radius: 0.25em;
+    vertical-align: middle;
+}
+nav img {
+    display: inline-flexbox;
+    max-height: 5em;
+    vertical-align: middle;
 }
 
 /* content */
@@ -94,5 +100,4 @@ th, td { padding: 0.25em; }
 thead, tfoot, tr:nth-child(even) { background: #f9f8ea; }
 
 /* media */
-
 img, iframe, video { max-width: 100%; }

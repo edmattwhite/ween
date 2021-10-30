@@ -4,6 +4,8 @@
 
 {{ .Content }}
 
+<h3>Articles:</h3>
+
 <ul>
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}

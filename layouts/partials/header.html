@@ -1,7 +1,9 @@
 <nav>
+    {{- $image := resources.Get "images/logo.svg" -}}
+    <img src="{{ $image.Permalink | safeURL}}" alt={{ site.Title }}>
     {{ range .Site.Menus.main }}
     <li><a href="{{ .URL | relURL}}">
-    {{ .Name }}
-    </a></li>
+            {{ .Name }}
+        </a></li>
     {{ end }}
 </nav>
