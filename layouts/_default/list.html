@@ -10,7 +10,7 @@
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
   {{ range (where $pages "Section" "!=" "") }}
   <li>
-    <a href="{{ .RelPermalink }}">{{ .Section | markdownify }}</a>
+    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
   </li>
   {{ end }}
 </ul>
